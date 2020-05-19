@@ -3,9 +3,9 @@ from time import sleep
 
 from selenium import webdriver
 
-# import requests
-#
-# print(requests.get("http://www.taobao.com").text)
+import requests
+
+print(requests.get("http://www.taobao.com").text)
 
 class test(unittest.TestCase):
     def test1(self):
