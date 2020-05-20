@@ -259,19 +259,19 @@ import math
 # print(Foo(6))
 
 
-str = '最短 = 1ms，最长 = 2ms，平均 = 1ms'
-i = 0
-j = []
-res1 = list(str)
-for r in res1:
-    i += 1
-    if r == "s":
-        j.append(i)
-print(j)
-min = str[j[0]-3:j[0]-2]
-max = str[j[1]-3:j[1]-2]
-avg = str[j[2]-3:j[2]-2]
-print(min, avg, max)
+# str = '最短 = 1ms，最长 = 2ms，平均 = 1ms'
+# i = 0
+# j = []
+# res1 = list(str)
+# for r in res1:
+#     i += 1
+#     if r == "s":
+#         j.append(i)
+# print(j)
+# min = str[j[0]-3:j[0]-2]
+# max = str[j[1]-3:j[1]-2]
+# avg = str[j[2]-3:j[2]-2]
+# print(min, avg, max)
 # res = str[str.index("(")+1:str.index("%")+1]
 # res1 = list(str)
 # a = 0

@@ -51,8 +51,8 @@ def icmp_continuous():
 
                 lost_flag = 0
                 lost_list.append(float(lost))
-                for a in lost_list:
-                    lost_flag = lost_flag + a
+                for b in lost_list:
+                    lost_flag = lost_flag + b
                 lost_flag = lost_flag / len(lost_list)
 
                 file = open("result.json")
