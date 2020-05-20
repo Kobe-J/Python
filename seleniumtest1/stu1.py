@@ -259,26 +259,27 @@ import math
 # print(Foo(6))
 
 
-str = '''正在 Ping 172.168.10.1 具有 32 字节的数据:
-来自 172.168.10.1 的回复: 字节=32 时间=2ms TTL=128
-来自 172.168.10.1 的回复: 字节=32 时间=2ms TTL=128
-来自 172.168.10.1 的回复: 字节=32 时间=2ms TTL=128
-来自 172.168.10.1 的回复: 字节=32 时间=1ms TTL=128
-来自 172.168.10.1 的回复: 字节=32 时间=2ms TTL=128
-
-172.168.10.1 的 Ping 统计信息:
-    数据包: 已发送 = 5，已接收 = 5，丢失 = 0 (0% 丢失)，
-往返行程的估计时间(以毫秒为单位):
-    最短 = 1ms，最长 = 2ms，平均 = 1ms'''
-
-res = str[str.index("(")+1:str.index("%")+1]
+str = '最短 = 1ms，最长 = 2ms，平均 = 1ms'
+i = 0
+j = []
 res1 = list(str)
-a = 0
-b = 0
 for r in res1:
-    b +=1
-    if r == "=":
-        a = b
-print(a)
-print(b)
-print(str[a+1:-2])
+    i += 1
+    if r == "s":
+        j.append(i)
+print(j)
+min = str[j[0]-3:j[0]-2]
+max = str[j[1]-3:j[1]-2]
+avg = str[j[2]-3:j[2]-2]
+print(min, avg, max)
+# res = str[str.index("(")+1:str.index("%")+1]
+# res1 = list(str)
+# a = 0
+# b = 0
+# for r in res1:
+#     b +=1
+#     if r == "=":
+#         a = b
+# print(a)
+# print(b)
+# print(str[a+1:-2])

@@ -45,7 +45,6 @@ def icmp_continuous():
 
                 avg_flag = 0
                 avg_list.append(float(avg))
-
                 for a in avg_list:
                     avg_flag = avg_flag + a
                 avg_flag = avg_flag / len(avg_list)
@@ -71,7 +70,7 @@ def icmp_continuous():
                 file = open("result.json", "w")
                 file.write(content)
                 file.close()
-                print(min, avg, max, lost)
+                print('最小延迟：'+min, '平均延迟：'+avg, '最大延迟：'+max, '丢包率：' + lost+'%')
             except:
                 pass
         else:
