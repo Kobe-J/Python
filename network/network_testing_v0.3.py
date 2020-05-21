@@ -60,10 +60,10 @@ def icmp_continuous():
                 file.close()
                 content = json.loads(content)
                 content["ping"]["min"] = float(content["ping"]["min"]) if float(content["ping"]["min"]) <= float(
-                    min) else min
+                    min) else float(min)
                 content["ping"]["avg"] = avg_flag
                 content["ping"]["max"] = float(content["ping"]["max"]) if float(content["ping"]["max"]) >= float(
-                    max) else max
+                    max) else float(max)
                 content["ping"]["lost"] = lost_flag
                 content = json.dumps(content)
 
