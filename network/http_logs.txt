@@ -1,0 +1,10 @@
+Mon May 25 16:52:14 2020 Connection Error 
+Mon May 25 16:52:14 2020 html or title is None 
+Mon May 25 16:59:05 2020 Connection Error 
+Mon May 25 16:59:05 2020 html or title is None 
+Mon May 25 17:02:50 2020 Connection Error 
+Mon May 25 17:02:50 2020 html or title is None 
+Mon May 25 17:07:07 2020 Connection Error 
+Mon May 25 17:07:07 2020 html or title is None 
+Mon May 25 17:07:26 2020 Connection Error 
+Mon May 25 17:07:26 2020 html or title is None 

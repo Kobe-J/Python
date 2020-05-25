@@ -1,5 +1,5 @@
-import requests,bs4,time
-from requests.exceptions import ReadTimeout,ConnectTimeout,HTTPError,ConnectionError
+import requests, bs4, time
+from requests.exceptions import ReadTimeout, ConnectTimeout, HTTPError, ConnectionError
 
 
 def send_http_packet(url):
@@ -7,8 +7,8 @@ def send_http_packet(url):
     user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
     headers = {'User-Agent': user_agent}
     url = "http://" + url
-    response_html= ""
-    file = open("http_logs.txt","a")
+    response_html = ""
+    file = open("http_logs.txt", "a")
     try:
         response = requests.get(url, headers)
         response_html = response.content.decode("UTF-8")
@@ -34,10 +34,11 @@ def send_http_packet(url):
         file.close()
         return False
 
-def check_http(url,title):
+
+def check_http(url, title):
     html = send_http_packet(url)
-    file = open("http_logs.txt","a")
-    if html != False  and title != False :
+    file = open("http_logs.txt", "a")
+    if html != False and title != False:
         soup = bs4.BeautifulSoup(html, 'lxml')
         html_title = ""
         html_title = soup.title.text

@@ -1,6 +1,7 @@
 from network.http_test import *
 from network.icmp_test import *
 from network.config import *
+from network.test import *
 import threading
 import time
 import json
@@ -12,13 +13,13 @@ def start_check_http(url, title):
     global http_status
     while True:
         if check_http(url, title):
-            # http_status = True
             print("http_status :", http_status)
         else:
             http_status = False
             print("http_status :", http_status)
             file = open("http_logs.txt", "a")
             file.write(time.asctime(time.localtime(time.time())) + " : http status is " + str(http_status) + "\n")
+            http_status = auto_connect(wifi="NebulAI", alternate=5, timeout=5, testURL="https://www.baidu.com")
         time.sleep(1)
 
 
