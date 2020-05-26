@@ -139,7 +139,7 @@ import math
 #         yield arr
 #         arr = [1] + [arr[i] + arr[i + 1] for i in range(len(arr) - 1)] + [1]
 #         print(arr)
-    
+
 
 # def triangles():
 #     line = [1]
@@ -283,3 +283,19 @@ import math
 # print(a)
 # print(b)
 # print(str[a+1:-2])
+# a = [1, 2, 3, 4]
+# print(a[:-2])
+# print(a[1:])
+# print(a[:])
+a = 'This,is-Xsky'
+q = list(a)
+b = "".join(a[0:4])
+c = "".join(a[5:7])
+d = "".join(a[8:])
+# q.remove()
+q.append(b)
+q.append(c)
+q.append(d)
+print(str(q[q.index("This"):]).lower())
+
+# a=['this', 'is', 'xsky']
