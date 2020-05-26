@@ -19,7 +19,7 @@ def start_check_http(url, title):
             print("http_status :", http_status)
             file = open("http_logs.txt", "a")
             file.write(time.asctime(time.localtime(time.time())) + " : http status is " + str(http_status) + "\n")
-            http_status = auto_connect(wifi="NebulAI", alternate=5, timeout=5, testURL="https://www.baidu.com")
+            http_status = auto_connect()
         time.sleep(1)
 
 

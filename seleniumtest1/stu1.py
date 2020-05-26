@@ -287,15 +287,15 @@ import math
 # print(a[:-2])
 # print(a[1:])
 # print(a[:])
-a = 'This,is-Xsky'
-q = list(a)
-b = "".join(a[0:4])
-c = "".join(a[5:7])
-d = "".join(a[8:])
-# q.remove()
-q.append(b)
-q.append(c)
-q.append(d)
-print(str(q[q.index("This"):]).lower())
+# a = 'This,is-Xsky'
+# q = list(a)
+# b = "".join(a[0:4])
+# c = "".join(a[5:7])
+# d = "".join(a[8:])
+# # q.remove()
+# q.append(b)
+# q.append(c)
+# q.append(d)
+# print(str(q[q.index("This"):]).lower())
 
-# a=['this', 'is', 'xsky']
+print(sum(range(1, 5)))
