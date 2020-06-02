@@ -1,7 +1,7 @@
 from network.http_test import *
 from network.icmp_test import *
 from network.config import *
-from network.test import *
+from network.test_network import *
 import threading
 import time
 import json
