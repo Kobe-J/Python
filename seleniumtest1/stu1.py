@@ -297,5 +297,6 @@ import math
 # q.append(c)
 # q.append(d)
 # print(str(q[q.index("This"):]).lower())
+# print(sum(range(1, 5)))
 
-print(sum(range(1, 5)))
+
