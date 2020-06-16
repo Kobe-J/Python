@@ -9,6 +9,7 @@ numPicture = 0
 file = ''
 List = []
 
+"""本地调试"""
 
 def Find(url):
     global List
