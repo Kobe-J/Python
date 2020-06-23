@@ -1,6 +1,6 @@
 import os
 import time
-import request
+import requests
 import datetime
 
 
@@ -9,7 +9,7 @@ def auto_connect(wifi="NebulAI", alternate=5, timeout=5, testURL="https://www.ba
     flag = False
     while True:
         try:
-            request.get(testURL)
+            requests.get(testURL)
             if flag:
                 print("重新连接成功！")
                 flag = False
