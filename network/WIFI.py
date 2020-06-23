@@ -65,6 +65,6 @@ class PoJie():
         self.file.close()
 
 
-path = r"D:\WIFI.txt"  # 密码字典文件URL
+path = r"D:\WIFI.txt"  # 密码字典文件url
 start = PoJie(path)
 start.readPassWord()
