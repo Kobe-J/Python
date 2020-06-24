@@ -1,5 +1,5 @@
 {
     "dns":{"domain":"www.baidu.com","dnsserver":"114.114.114.114"},
-    "icmp":{"ip_address":"172.168.10.1","times":"5"},
+    "icmp":{"ip_address":"192.168.5.1","times":"5"},
     "http":{"url":"www.baidu.com","title":"百度一下，你就知道"}
 }
