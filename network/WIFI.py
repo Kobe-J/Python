@@ -39,7 +39,7 @@ class PoJie():
     def test_connect(self, findStr):  # 测试链接
 
         profile = pywifi.Profile()  # 创建wifi链接文件
-        profile.ssid = "小米共享WiFi_0159"  # wifi名称
+        profile.ssid = ""  # wifi名称
         profile.auth = const.AUTH_ALG_OPEN  # 网卡的开放，
         profile.akm.append(const.AKM_TYPE_WPA2PSK)  # wifi加密算法
         profile.cipher = const.CIPHER_TYPE_CCMP  # 加密单元
@@ -65,6 +65,6 @@ class PoJie():
         self.file.close()
 
 
-path = r"D:\WIFI.txt"  # 密码字典文件url
+path = r""  # 密码字典文件url
 start = PoJie(path)
 start.readPassWord()
