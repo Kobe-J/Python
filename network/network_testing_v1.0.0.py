@@ -71,7 +71,7 @@ def icmp_continuous():
                 file = open("result.json", "w")
                 file.write(content)
                 file.close()
-                print('最小延迟：'+min, '平均延迟：'+avg, '最大延迟：'+max, '丢包率：' + lost+'%')
+                print('最小延迟：'+min+'ms', '平均延迟：'+avg+'ms', '最大延迟：'+max+'ms', '丢包率：' + lost+'%')
             except:
                 pass
         else:

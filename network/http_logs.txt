@@ -15,3 +15,11 @@ Tue May 26 18:38:57 2020 html or title is None
 Tue May 26 18:39:09 2020 Connection Error 
 Tue May 26 18:39:09 2020 html or title is None 
 Tue May 26 18:38:57 2020 : http status is False
+Thu Jul  2 16:15:50 2020 Connection Error 
+Thu Jul  2 16:15:50 2020 html or title is None 
+Thu Jul  2 16:16:30 2020 Connection Error 
+Thu Jul  2 16:16:30 2020 html or title is None 
+Thu Jul  2 16:15:50 2020 : http status is False
+Thu Jul  2 16:16:59 2020 Connection Error 
+Thu Jul  2 16:16:59 2020 html or title is None 
+Thu Jul  2 16:16:30 2020 : http status is False
