@@ -1,4 +1,11 @@
 import requests
+
+
+"""
+姚希龙
+2020.7.2
+视频爬虫
+"""
 hd = {
     'Connection': 'keep-alive',
     'Host': 'upos-hz-mirrorkodo.acgvideo.com:443',
