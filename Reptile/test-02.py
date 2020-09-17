@@ -86,7 +86,7 @@ def dowmloadPicture(html, keyword):
 
 
 if __name__ == '__main__':  # 主函数入口
-    tm = int(input('请输入需要下载的数量 '))
+    tm = int(input('输入需要下载的数量 '))
     numPicture = tm
     line_list = []
     with open('./name.txt', encoding='utf-8') as file:
@@ -112,10 +112,10 @@ if __name__ == '__main__':  # 主函数入口
                 result = requests.get(url, timeout=10)
                 print(url)
             except error.HTTPError as e:
-                print('网络错误，请调整网络后重试')
+                print('NetWork:error')
                 t = t + 60
             else:
                 dowmloadPicture(result.text, word)
                 t = t + 60
         numPicture = numPicture + tm
-    print('当前进程结束，感谢使用')
+    print('end')
