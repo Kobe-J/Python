@@ -300,15 +300,22 @@ import math
 # print(sum(range(1, 5)))
 
 
-mylist = [x for x in range(1, 100)]
+# mylist = [x for x in range(1, 100)]
+#
+#
+# mylist1 = [x for x in range(1, 100, 2) if x < 5] #嵌套判断
+#
+# mylist2 = [x * x + x for x in range(1, 101, 2) if x < 50]  #嵌套元素公式
+#
+# mylist3 = [[x * x] for x in range(1, 100, 2) if x < 50]  #嵌套列表
+#
+# mylist4 = [x + y for x in range(100) for y in range(100)]  #嵌套循环
+#
+# print(mylist,"\n",mylist1,"\n",mylist2,"\n",mylist3,"\n",mylist4)
 
-
-mylist1 = [x for x in range(1, 100, 2) if x < 5] #嵌套判断
-
-mylist2 = [x * x + x for x in range(1, 101, 2) if x < 50]  #嵌套元素公式
-
-mylist3 = [[x * x] for x in range(1, 100, 2) if x < 50]  #嵌套列表
-
-mylist4 = [x + y for x in range(100) for y in range(100)]  #嵌套循环
-
-print(mylist,"\n",mylist1,"\n",mylist2,"\n",mylist3,"\n",mylist4)
+# 使用列表生成器生成矩阵
+mylist = []
+for i in range(10):
+    mylist.append([i * 10 + x for x in range(10)])
+for i in mylist:
+    print(i)
