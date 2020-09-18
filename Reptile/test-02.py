@@ -94,7 +94,7 @@ if __name__ == '__main__':  # 主函数入口
     for word in line_list:
         url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=' + word + '&pn='
         tot = Find(url)
-        Recommend = recommend(url)  # 记录相关推荐
+        Recommend = recommend(url)
         print('经过检测%s类图片共有%d张' % (word, tot))
         file = word + '文件'
         y = os.path.exists(file)
